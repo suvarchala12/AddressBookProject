@@ -38,9 +38,25 @@ class Program
 {
     static void Main(string[] args)
     {
-        AddressBookMain res = new AddressBookMain("svc", "Bhuma",
-            "podili", "Ongole", "va", "suvarchala12@gmail.com",
-            7981267755, 523240);
+        Console.WriteLine("==============Add Contact===============");
+        Console.Write("Enter First Name:");
+        string fn = Console.ReadLine();
+        Console.Write("Enter Last Name:");
+        string ln = Console.ReadLine();
+        Console.Write("Enter Address :");
+        string adr = Console.ReadLine();
+        Console.Write("Enter City:");
+        string cit = Console.ReadLine();
+        Console.Write("Enter State:");
+        string st = Console.ReadLine();
+        Console.Write("Enter Email:");
+        string em = Console.ReadLine();
+        Console.Write("Enter Contact Number:");
+        double mob = Convert.ToDouble(Console.ReadLine());
+        Console.Write("Enter Zip Code:");
+        double zc = Convert.ToDouble(Console.ReadLine());
+
+        AddressBookMain res = new AddressBookMain(fn, ln, adr, cit, st, em, mob, zc);
         res.Display();
     }
 }
