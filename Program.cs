@@ -26,9 +26,9 @@ class Program
     {
         Console.WriteLine("__________AddressBookProgram____________");
         int choice = 0;
-        while (choice != 4)
+        while (choice != 5)
         {
-            Console.WriteLine("Enter your choice: 1. AddContact 2.ContactList 3..Update contact 4.Exit");
+            Console.WriteLine("Enter your choice: 1. AddContact 2.ContactList 3..Update contact 4.Remove Contact 5.Exit");
             choice = Convert.ToInt32(Console.ReadLine());
             switch (choice)
             {
@@ -40,6 +40,9 @@ class Program
                     break;
                 case 3:
                     UpdatePeople();
+                    break;
+                case 4:
+                    RemovePeople();
                     break;
             }
         }
@@ -180,6 +183,31 @@ class Program
                 }
             }
 
+        }
+    }
+
+    private static void RemovePeople()
+    {
+        Console.WriteLine("Enter the first name of the person you would like to remove.");
+        string firstName = Console.ReadLine();
+        Person person = People.FirstOrDefault(x => x.FirstName.ToLower() == firstName.ToLower());
+        if (person == null)
+        {
+            Console.WriteLine("That person could not be found. Press any key to continue");
+            Console.ReadKey();
+            return;
+        }
+        else
+        {
+            Console.WriteLine("Are you sure you want to remove this person from your address book? (Y/N)");
+            PrintPerson(person);
+
+            if (Console.ReadKey().Key == ConsoleKey.Y)
+            {
+                People.Remove(person);
+                Console.WriteLine("Person removed. Press any key to continue.");
+                Console.ReadKey();
+            }
         }
     }
 }
