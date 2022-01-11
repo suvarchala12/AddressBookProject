@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
+
 namespace AddressBookTrail
 {
     class Program
@@ -7,7 +7,7 @@ namespace AddressBookTrail
         static void Main(string[] args)
         {
             Console.WriteLine("Hello! Welcome to Address Book.");
-            Console.WriteLine("=================================\nChoose the operation:\n1.Add Contact.\n2.View Saved Contacts.\n3.Edit Existing Contact.\n4.Delete Existing Contact.\n5.Duplicate Checker.\n6.Exit Adress Book Application.\n=================================");
+            Console.WriteLine("=================================\nChoose the operation:\n1.Add Contact.\n2.View Saved Contacts.\n3.Edit Existing Contact.\n4.Delete Existing Contact.\n5.Duplicate Checker.\n6.Search Person.\n7.Exit Adress Book Application.\n=================================");
             int userInput = Convert.ToInt32(Console.ReadLine());
             var addressBook = new AddressBook();
 
@@ -31,12 +31,15 @@ namespace AddressBookTrail
                         addressBook.DuplicateChecker();
                         break;
                     case 6:
+                        addressBook.SearchPerson();
+                        break;
+                    case 7:
                         return;
                     default:
                         Console.WriteLine("!!! Choose valid operation !!!");
                         break;
                 }
-                Console.WriteLine("=================================\nChoose the operation:\n1.Add Another Contact.\n2.View Saved Contacts.\n3.Edit Existing Contact.\n4.Delete Existing Contact.\n5.Duplicate Checker.\n6.Exit Address Book Application \n=================================");
+                Console.WriteLine("=================================\nChoose the operation:\n1.Add Another Contact.\n2.View Saved Contacts.\n3.Edit Existing Contact.\n4.Delete Existing Contact.\n5.Duplicate Checker.\n6.Search Person.\n7.Exit Address Book Application \n=================================");
                 userInput = Convert.ToInt32(Console.ReadLine());
             }
         }
