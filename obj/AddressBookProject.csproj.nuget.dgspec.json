@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\Desktop\\New folder\\AddressBookProject\\AddressBookProject.csproj": {}
+    "C:\\Users\\user\\Desktop\\vs\\New folder\\AddressBookProject\\AddressBookProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\Desktop\\New folder\\AddressBookProject\\AddressBookProject.csproj": {
+    "C:\\Users\\user\\Desktop\\vs\\New folder\\AddressBookProject\\AddressBookProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\New folder\\AddressBookProject\\AddressBookProject.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\vs\\New folder\\AddressBookProject\\AddressBookProject.csproj",
         "projectName": "AddressBookProject",
-        "projectPath": "C:\\Users\\user\\Desktop\\New folder\\AddressBookProject\\AddressBookProject.csproj",
+        "projectPath": "C:\\Users\\user\\Desktop\\vs\\New folder\\AddressBookProject\\AddressBookProject.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Desktop\\New folder\\AddressBookProject\\obj\\",
+        "outputPath": "C:\\Users\\user\\Desktop\\vs\\New folder\\AddressBookProject\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
